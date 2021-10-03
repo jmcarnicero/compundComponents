@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/compundComponents/static/css/main.ceac6349.chunk.css",
+    "main.js": "/compundComponents/static/js/main.73c2e5cd.chunk.js",
+    "main.js.map": "/compundComponents/static/js/main.73c2e5cd.chunk.js.map",
+    "runtime-main.js": "/compundComponents/static/js/runtime-main.3ad1b05b.js",
+    "runtime-main.js.map": "/compundComponents/static/js/runtime-main.3ad1b05b.js.map",
+    "static/css/2.53150396.chunk.css": "/compundComponents/static/css/2.53150396.chunk.css",
+    "static/js/2.de91a712.chunk.js": "/compundComponents/static/js/2.de91a712.chunk.js",
+    "static/js/2.de91a712.chunk.js.map": "/compundComponents/static/js/2.de91a712.chunk.js.map",
+    "static/js/3.f6ac0931.chunk.js": "/compundComponents/static/js/3.f6ac0931.chunk.js",
+    "static/js/3.f6ac0931.chunk.js.map": "/compundComponents/static/js/3.f6ac0931.chunk.js.map",
+    "index.html": "/compundComponents/index.html",
+    "static/css/2.53150396.chunk.css.map": "/compundComponents/static/css/2.53150396.chunk.css.map",
+    "static/css/main.ceac6349.chunk.css.map": "/compundComponents/static/css/main.ceac6349.chunk.css.map",
+    "static/js/2.de91a712.chunk.js.LICENSE.txt": "/compundComponents/static/js/2.de91a712.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3ad1b05b.js",
+    "static/css/2.53150396.chunk.css",
+    "static/js/2.de91a712.chunk.js",
+    "static/css/main.ceac6349.chunk.css",
+    "static/js/main.73c2e5cd.chunk.js"
+  ]
+}
