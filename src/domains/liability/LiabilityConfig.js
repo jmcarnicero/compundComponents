@@ -10,6 +10,9 @@ import Fetch from "../../shared/FeatureFetch";
 const config = {};
 
 config.FeatureA = {
+  title: "Table",
+  subTitle: "Subtitle example",
+  description: "description table",
   component: <FeatureA />,
   props: {
     nuevaProp:
@@ -17,10 +20,16 @@ config.FeatureA = {
   },
 };
 config.FeatureB = {
+  title: "Form example",
+  subTitle: "Subtitle example",
+  description: "description Form example",
   component: <FeatureB />,
 };
 
 config.FeatureFetchCoinsRenderName = {
+  title: "Render coins name",
+  subTitle: "Subtitle example",
+  description: "description Render coins name",
   component: (
     <Fetch url="https://api.coinlore.net/api/tickers/?start=100&limit=100">
       <RendereData></RendereData>
@@ -29,6 +38,9 @@ config.FeatureFetchCoinsRenderName = {
 };
 
 config.FeatureFetchCoinsRenderPercent = {
+  title: "Render percent coins",
+  subTitle: "Subtitle example",
+  description: "description Render percent coins",
   component: (
     <Fetch url="https://api.coinlore.net/api/tickers/?start=100&limit=100">
       <RenderePercent></RenderePercent>

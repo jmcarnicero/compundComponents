@@ -9,16 +9,38 @@ import LiabilityConfig from "./domains/liability/LiabilityConfig";
 import MedicalConfig from "./domains/medical/mediacalConfig";
 import NegotiationConfig from "./domains/negotiation/negotationConfig";
 
-const configFeatures = Object.assign(LiabilityConfig, MedicalConfig, NegotiationConfig);
+const configFeatures = Object.assign(
+  LiabilityConfig,
+  MedicalConfig,
+  NegotiationConfig
+);
 
 function App() {
   const [featureSelected, setFeatureSelected] = useState("FeatureA");
+  const [featureInfo, setFeatureInfo] = useState({
+    title: "",
+    subTitle: "",
+    description: "",
+  });
 
   const renderFeatureNames = () => {
+    const setDataFeature = (item) => {
+      setFeatureInfo({
+        title: configFeatures[item].title,
+
+        subTitle: configFeatures[item].subTitle,
+        description: configFeatures[item].description,
+      });
+
+      setFeatureSelected(item);
+    };
+
     return Object.keys(configFeatures).map((item) => {
-      return <button onClick={()=>setFeatureSelected(item)}>{item}</button>;
+      return <button onClick={() => setDataFeature(item)}>{item}</button>;
     });
   };
+
+  console.log("featureInfo", featureInfo);
 
   return (
     <Layaout>
@@ -26,10 +48,10 @@ function App() {
       <RenderComponent
         featureName={featureSelected}
         config={configFeatures}
-        title="Data table"
-        subTitle="Subtitle example"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui"
-      ></RenderComponent>   
+        title={featureInfo.title}
+        subTitle={featureInfo.subTitle}
+        description={featureInfo.description}
+      ></RenderComponent>
     </Layaout>
   );
 }
